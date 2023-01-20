@@ -1,0 +1,11 @@
+ol {
+  list-style-type: lower-greek;
+}
+ol li {
+  padding: 0 10px;
+  margin: 0px 180px 2px 370px;
+}
+
+.list-title {
+  margin-left: 370px;
+}
