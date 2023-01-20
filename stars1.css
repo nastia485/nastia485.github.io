@@ -1,0 +1,21 @@
+.stars{
+    width:1150px;
+}
+.stars-container {
+    height:200px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.stars-text{
+    position: absolute;
+    top:50px;
+    left:10px;
+    right:10px;
+}
+.stars-text-title{
+    position: absolute;
+    margin:0;
+    top:20px;
+    left:480px;
+}
