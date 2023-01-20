@@ -81,14 +81,6 @@ rad.addEventListener("change", (event) => {
   document.getElementById("right-text").innerHTML =
     localStorage.getItem("updated_text");
 });
-
-window.onload = (event) => {
-  var info = localStorage.getItem("updated_text");
-  if(info!==null){
-  document.getElementById("right-text").innerHTML =
-    info;}
-};
-
 //task 5
 
 function addImgAndBtn() {
