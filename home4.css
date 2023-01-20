@@ -1,0 +1,130 @@
+body{
+     font-family:Roboto, Arial;
+    font-size:12px;
+    background-color: rgba(242, 242,242, 255);
+    margin:0;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: Source Sans Pro, Arial;
+    display: block;
+    margin-right:-300px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+    
+  }
+
+  li  :hover{
+    color: rgb(166, 227, 100);
+  }
+
+  .header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:0px 150px;
+    align-items: center;
+    
+  }
+
+  .title{
+    font-family: Montserrat, Arial;
+    font-size: 30px;
+    margin-top:50px;
+  }
+
+  .main-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .emblem{
+    width:150px;
+    margin-bottom:25px;
+  }
+
+  .info-square{
+    width:140px;
+    display:inline-block;
+    background-color: white;
+    text-align: left;
+    padding:20px 20px 30px 15px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  }
+
+  .info-title{
+    margin-bottom:20px;
+    width:20px;
+  }
+
+  .info-flexbox{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    z-index:200;
+  }
+
+  .main-img{
+    width:300px;
+    margin-top:-40px;
+    margin-bottom:100px;
+  }
+
+  .footer{
+    background-color: rgba(51,51,51,255);
+    color:white;
+    margin-bottom:-10px;
+    
+  }
+
+  .footer-text{
+    width:300px;
+    padding:20px;
+    display: inline-block;
+  }
+  .hamburger-img{
+    width:30px;
+    display: none;
+  }
+
+  @media (max-width: 640px) 
+{
+    .menu
+    {
+        display: none;
+    }
+    .info-flexbox{
+      flex-direction: column;
+    }
+    .main-img{
+      margin-top:50px;
+      
+    }
+    /*.header{
+      background-image: url(/images/hamburger-menu.svg) ;
+    }*/
+    .hamburger-img{
+      display: block;
+      z-index:300;
+    }
+
+    .header{
+      padding: 0px 20px;
+      justify-content: space-between;
+    }
+}
+
