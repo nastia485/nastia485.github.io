@@ -83,8 +83,10 @@ rad.addEventListener("change", (event) => {
 });
 
 window.onload = (event) => {
+  var info = localStorage.getItem("updated_text");
+  if(info!==null){
   document.getElementById("right-text").innerHTML =
-    localStorage.getItem("updated_text");
+    info;}
 };
 
 //task 5
