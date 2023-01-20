@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+
+        <link rel="stylesheet" href="home5.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+        function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                     c = c.substring(1);
+                        }
+            if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+            }
+        }
+            return "";
+        }
+
+        
+        function getConfirmation() {
+        var retVal = confirm("Do you want to save data from cookies?\n"+getCookie("divisors"));
+        if( retVal == true ) {
+            alert("Cookies are saved: \n"+getCookie("divisors")+"\nPlease reload page");
+            return true;
+        } else {
+            document.cookie = "cname=; cvalue=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+        }
+
+       function pageLoad(){
+        let cvalue = getCookie("divisors");
+        if (cvalue!==null){
+            getConfirmation();
+        } else{ alert('There are no cookies!');} 
+      }
+    
+         pageLoad();
+         
+        
+        </script> 
+        
+    </head>
+    <body>
+        <div class="header">
+            <p class="top-left-text">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Support us:  https://patreon.com
+        </p>
+            <div class="x" id="x">
+                <h5 class="top-title">All about space</h5>
+            </div>
+            <ul class="menu">
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="planets1.html">Planets</a></li>
+                <li><a href="galaxies1.html">Galaxies</a></li>
+                <li><a href="stars1.html">Stars</a></li>
+                <li><a href="asteroids1.html">Asteroids</a></li>
+              </ul>
+        </div>
+    
+
+        <div class="left-sidebar">
+           <p class="left-definition-text">
+            Astronomy is the science that studies the laws of the stars,
+             celestial objects and phenomena</p>
+        </div>
+        <div id="top-line" class="top-line"><p>Community of scientists</p></div>
+        <div id="main-div" class="main-div">
+            <div class="task1">
+                <button class = "change-content" type="button" onclick="changeLinesContent()">1. Change 3 and 6 content</button>
+            </div>
+            
+            <div class="task2">
+               <button class = "find-square" type="button" onclick="displaySquareValue()">2. Find square of trapezoid</button>
+               <p class="result" id="result"></p>
+            </div>
+               
+               <form class="task3" id="num-form">
+                <label for="fname">3.Enter number:</label><br>
+                <input type="text" id="input" name="input" ><br>
+                <button class = "sub-button" type="button" onclick="displayAndSaveDivisors()">Save</button>
+               <p class="divisors" id="divisors"></p>
+               </form>
+               
+               <form name="radio-form">
+               <input class="radio-btn" type="radio" id="radio-button" name="radio-button" value="radio-button">
+                <label for="radio-button">Save text in div # 4 to local storage</label>
+            </form>
+
+                <input style="visibility: hidden;" type="text" id="img-input" class="img-input"/>
+                <button style="visibility: hidden;" id="add-img-btn" class="add-img-btn" type="button" onclick="addImgAndBtn()">
+                  Add image
+                </button>
+                
+    </div>
+        </div>
+        <div class="right-sidebar" id="right-sidebar">
+            <p class="right-definition-text" id="right-text">
+                Cosmology  is a branch of physics and metaphysics dealing 
+                with the nature of the universe </p>
+        </div>
+        <div id="bottom-line" class="bottom-line"><p>Explore and enjoy</p></div>
+        
+        <div class="footer">
+            <p class="bottom-left-text">
+            "That's one small step for a man, one giant leap for mankind."
+            &nbsp;&nbsp;&nbsp;&nbsp;Neil Armstrong
+        </p>
+            <div class="y" id="y">
+                <h5 class="bottom-title">Study with us</h5>
+            </div>
+        </div>
+
+        <script src="./home5.js">    
+
+        </script>
+    </body>
+</html>
