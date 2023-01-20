@@ -1,0 +1,156 @@
+body{
+  margin:0;
+  font-family:Roboto, Arial;
+  font-size:18px;
+  position:relative;
+}
+.header,
+.footer
+{
+  padding: 85px 10px;
+  background-color: rgb(138, 46, 218);
+  position:relative;
+  overflow:hidden;
+  z-index:200;
+  
+}
+
+.x, .y{
+  top:50px;
+  bottom:50px;
+  right: 50px;
+  width:230px;
+  align-items: center;
+  background-color: rgb(236, 160, 251);
+  position:absolute;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 20px;
+  z-index: 1;
+}
+
+.footer{
+  margin-top:380px;
+  
+}
+
+.left-sidebar,
+.right-sidebar{
+  position:fixed;
+  top:170px;
+  width:200px;
+  background-color: rgb(31, 48, 201);
+  text-align: justify;
+  font-size: 18px;
+}
+.left-sidebar{
+  left:0;
+  bottom:210px;
+}
+.right-sidebar{
+  right:0;
+  bottom:170px;
+}
+
+.top-line,
+.bottom-line{
+  height: 50px;
+  position:fixed;
+  right:200px;
+  background-color: rgb(66, 218, 235);
+  text-align: center;
+  vertical-align:middle;
+  line-height: 10px;
+  color:rgb(33, 16, 107);
+}
+
+.top-line{
+  top:170px;
+  left:200px;
+}
+.bottom-line{
+  bottom:170px;
+  left:0;
+}
+
+.top-title,
+.bottom-title{
+  color:rgb(33, 7, 134);
+}
+
+.main-div{
+  position: fixed;
+  left:200px;
+  right:200px;
+  top:220px;
+  bottom:220px;
+  text-align: justify;
+  background-color: black;
+  color:aqua;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 200;
+  position: absolute;
+  top:60px;
+  left: 250px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  color:white;
+  font-size:40px;
+}
+
+.top-left-text,
+.bottom-left-text{
+  position:absolute;
+  float: left;
+  color: rgb(39, 7, 94);
+  text-align: justify;
+  padding: 20px;
+  text-align: center;
+}
+.top-left-text{
+  width:130px;
+  top:35px;
+  left:10px;
+}
+
+.bottom-left-text{
+  width:180px;
+  top:5px;
+  left:10px;
+}
+
+.left-definition-text{
+  margin:120px 12px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.right-definition-text{
+  margin:120px 12px;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.result{
+  margin-top:-40px;
+  margin-left:20px;
+}
+
+
+
+
+
