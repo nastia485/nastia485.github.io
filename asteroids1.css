@@ -1,0 +1,24 @@
+a {
+    
+    color:white;
+}
+
+.links-div{
+            width:180px;
+            display: inline-block;
+            font-size: 20px;
+            position:fixed;
+            text-align: center;
+            margin-top: 110px;
+            margin-left:140px
+}
+.asteroid1{
+    width:500px;
+}
+
+.asteroid2{
+    width:650px;
+    position:fixed;
+}
+
+
